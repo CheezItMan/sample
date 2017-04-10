@@ -6,6 +6,10 @@
 class Vehicle < ApplicationRecord
   belongs_to :owner
   validates :vin, uniqueness: true
+
+  def similar_vehicles
+    return Vehicle.where(["make = ? and model = ?", make, model])
+  end
 end
 ```
 
