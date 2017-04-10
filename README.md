@@ -19,3 +19,10 @@ class Owner < ApplicationRecord
   has_many :vehicles
 end
 ```
+
+
+```bash
+$ rails routes
+Prefix Verb   URI Pattern             Controller#Action
+       DELETE /vehicles/:id(.:format) vehicles#destroy
+```
