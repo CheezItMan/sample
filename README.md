@@ -8,3 +8,10 @@ class Vehicle < ApplicationRecord
   validates :vin, uniqueness: true
 end
 ```
+
+```ruby
+class Owner < ApplicationRecord
+  validates :name, presence: true
+  has_many :vehicles
+end
+```
