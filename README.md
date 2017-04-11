@@ -26,3 +26,11 @@ $ rails routes
 Prefix Verb   URI Pattern             Controller#Action
        DELETE /vehicles/:id(.:format) vehicles#destroy
 ```
+
+```ruby
+require "test_helper"
+
+describe VehiclesController do
+  # your code here
+end
+```
